@@ -1,0 +1,127 @@
+/* 🌟 New Blue & Green Gradient Background */
+.gradient-bg {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0f2027, #2c5364); /* Darker Blue Shades */
+    color: white;
+    padding: 20px;
+    text-align: center; /* Ensure text aligns well on mobile */
+  }
+  
+  /* 🎁 Title Text */
+  .title-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ffffff, #ffefba);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* 🌟 Claim Button */
+  .claim-btn {
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    border-radius: 30px;
+    background-color: #27ae60; /* Green */
+    color: white;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    width: 100%; /* Full width on mobile */
+    max-width: 300px;
+    margin: auto;
+    display: block;
+  }
+  
+  .claim-btn:hover {
+    background-color: #2ecc71; /* Lighter Green */
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 255, 128, 0.3);
+  }
+  
+  /* ✅ Claimed Coupon Card */
+  .claimed-card {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 90%;
+    margin: auto;
+  }
+  
+  /* 🎉 Fade-in Animation for Coupon Code */
+  .coupon-code {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #27ae60;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* 🎟️ Available Coupons */
+  .remaining-text {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  
+  .count {
+    background: #ffeb3b;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  
+  /* 🔥 Vibrant Coupon List */
+  .coupon-list {
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .vibrant-list {
+    background: linear-gradient(90deg, #ffcc80, #ff6f61);
+    color: white;
+    font-weight: bold;
+    border: none;
+  }
+  
+  /* 🎉 Success Modal */
+  .modal-code {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #28a745;
+  }
+  
+  /* 📱 Mobile Optimization */
+  @media (max-width: 768px) {
+    .title-text {
+      font-size: 2rem;
+    }
+  
+    .claim-btn {
+      font-size: 1.1rem;
+      padding: 10px 18px;
+      width: 90%; /* Make button wider for touch accessibility */
+    }
+  
+    .claimed-card {
+      padding: 15px;
+    }
+  
+    .coupon-list {
+      font-size: 1rem;
+      max-width: 100%;
+    }
+  
+    .modal-code {
+      font-size: 1.2rem;
+    }
+  }
+  
